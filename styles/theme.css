@@ -1,5 +1,11 @@
+* {
+}
+
 html,
 body {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100%;
   height: 100%;
 }
 
@@ -18,8 +24,20 @@ header ul {
   list-style: none;
   display: flex;
 }
+@media screen and (max-width: 500px) {
+  header ul {
+    display: block;
+  }
+}
 header ul li {
   padding: 20px;
+}
+a {
+  text-decoration: none;
+}
+
+main {
+  margin: 20px;
 }
 
 .triple-play-inner-page .heading {
