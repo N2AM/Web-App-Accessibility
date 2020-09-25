@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Triple Play</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" href="images/logo.png">
+    <!-- Font Awesome -->
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory-->
+    <link rel="stylesheet"
+        href="http://fonts.googleapis.com/css?family=Roboto:100italic,300,300italic,400,500italic,700,900">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:300,700">
+
+    <!-- <link rel="stylesheet" href="styles/vendor.css">
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/add-style.css">
+        <link rel="stylesheet" href="styles/branding.css"> -->
+    <link rel="stylesheet" href="styles/theme.css">
+    <!--<link rel="stylesheet" href="styles/add-style.css">-->
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="styles/ie8-styles.css">
+        <![endif]-->
+    <!--[if lte IE 9]>
+        <link rel="stylesheet" href="styles/ie9-styles.css">
+        <![endif]-->
+    <!--[if lte IE 8]>
+        <script src="scripts/ie8js.js"></script>
+        <![endif]-->
+</head>
+
+<body class="theme-default main-page">
+    <header>
+        <img class="logo" src="images/logo.png" alt="Logo">
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#"></a>Home</li>
+                <li><a href="#"></a>Offers</li>
+                <li><a href="#"></a>Contact</li>
+                <li><a href="#"></a>About</li>
+            </ul>
+        </nav>
+    </header>
+    <!-- main content start here -->
+    <main class="container--ver clearfix one-one align-center col-sm-12">
+        <div class="block__body">
+            <div class="triple-play-inner-page">
+                <div class="taps">
+                    <div class="tap">
+                        <button aria-controls="channel-0" aria-expanded="false" onclick="openCollapse(0)">
+                            <img src="images/svgs/arr-down.svg" alt="Collapse-closed">
+                            <span>All our channels, EVERYTHING!</span>
+                        </button>
+                        <div id="channel-0" class="collapse">
+                            <div class="card card-body">
+                                <div class="row channel bordered">
+                                    <div class="col-2">
+                                        <label>Kids (7)</label>
+                                    </div>
+                                    <div class="col-8">
+                                        <div class="row">
+                                            <div class="col-3"><img src="images/Group 122.png" alt="channel"></div>
+                                            <div class="col-3"><img src="images/Group 122.png" alt="channel"></div>
+                                            <div class="col-3"><img src="images/Group 122.png" alt="channel"></div>
+                                            <div class="col-3"><img src="images/Group 122.png" alt="channel"></div>
+                                            <div class="col-3"><img src="images/Group 122.png" alt="channel"></div>
+                                            <div class="col-3"><img src="images/Group 122.png" alt="channel"></div>
+                                            <div class="col-3"><img src="images/Group 122.png" alt="channel"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row channel bordered">
+                                    <div class="col-2">
+                                        <label>Movies (4)</label>
+                                    </div>
+                                    <div class="col-8">
+                                        <div class="row">
+                                            <div class="col-3"><img src="images/Group 114.png" alt="channel"></div>
+                                            <div class="col-3"><img src="images/Group 114.png" alt="channel"></div>
+                                            <div class="col-3"><img src="images/Group 114.png" alt="channel"></div>
+                                            <div class="col-3"><img src="images/Group 114.png" alt="channel"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row channel">
+                                    <div class="col-2">
+                                        <label>Arabic (3)</label>
+                                    </div>
+                                    <div class="col-8">
+                                        <div class="row">
+                                            <div class="col-3"><img src="images/Group 120.png" alt="channel"></div>
+                                            <div class="col-3"><img src="images/Group 120.png" alt="channel"></div>
+                                            <div class="col-3"><img src="images/Group 120.png" alt="channel"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tap">
+                        <button aria-controls="channel-1" aria-expanded="false" onclick="openCollapse(1)">
+                            <img src="images/svgs/arr-down.svg" alt="Collapse-closed">
+                            <span>Terms and conditions</span>
+                        </button>
+                        <div id="channel-1" class="collapse">
+                            <div class="card card-body">
+                                <ul>
+                                    <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                        Ipsum has been the industry’s
+                                        standard
+                                        dummy text.</li>
+                                    <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
+                                    <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
+                                    <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
+                                    <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </main>
+    <!-- main content end here -->
+
+
+    <script>
+        function openCollapse(e) {
+            document.getElementsByClassName('collapse')[e].classList.toggle("show");
+            document.querySelectorAll('.tap button')[e].querySelector('img').classList.toggle("show");
+            var ariaEexpanded = document.querySelectorAll('.tap button')[e].getAttribute("aria-expanded");
+            document.querySelectorAll('.tap button')[e].setAttribute('aria-expanded', ariaEexpanded == "true" ? false : true)
+            if (document.querySelectorAll('.tap button')[e].querySelector('img.show')) {
+                document.querySelectorAll('.tap button')[e].querySelector('img.show').style.transform = 'rotate(180deg)'
+            } else {
+                document.querySelectorAll('.tap button')[e].querySelector('img').style.transform = 'rotate(0deg)'
+
+            }
+        }
+
+    </script>
+</body>
+
+</html>

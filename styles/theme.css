@@ -1,0 +1,321 @@
+html,
+body {
+  height: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+}
+header ul li {
+  padding: 20px;
+}
+
+.triple-play-inner-page .heading {
+  text-align: center;
+}
+
+.triple-play-inner-page .heading h3 {
+  font-size: 40px;
+  font-weight: normal;
+  margin: 13px 0;
+}
+
+@media screen and (max-width: 720px) {
+  .triple-play-inner-page .heading h3 {
+    font-size: 26px;
+  }
+}
+
+.triple-play-inner-page .heading h5 {
+  font-size: 26px;
+  margin: 0;
+  margin-top: 16px;
+}
+
+@media screen and (max-width: 720px) {
+  .triple-play-inner-page .heading h5 {
+    font-size: 16px;
+  }
+}
+
+.triple-play-inner-page .heading .banner img {
+  max-width: 100%;
+  height: auto;
+}
+
+.triple-play-inner-page .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.triple-play-inner-page .row .col-md-6 {
+  flex-basis: 48%;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.triple-play-inner-page .row .col-md-6 label {
+  font-size: 28px;
+}
+
+@media screen and (max-width: 720px) {
+  .triple-play-inner-page .row .col-md-6 label {
+    font-size: 18px;
+  }
+}
+
+.triple-play-inner-page .row .col-md-6 .price-wrapper p {
+  font-size: 28px;
+  margin-top: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  padding-bottom: 10px;
+}
+
+@media screen and (max-width: 720px) {
+  .triple-play-inner-page .row .col-md-6 .price-wrapper p {
+    font-size: 18px;
+  }
+}
+
+.triple-play-inner-page .row .col-md-6 .price-wrapper p .price {
+  font-size: 55px;
+  margin-right: 7px;
+}
+
+@media screen and (max-width: 720px) {
+  .triple-play-inner-page .row .col-md-6 .price-wrapper p .price {
+    font-size: 35px;
+  }
+}
+
+html[lang="ar"] .triple-play-inner-page .row .col-md-6 .price-wrapper p .price,
+html.l-rtl .triple-play-inner-page .row .col-md-6 .price-wrapper p .price {
+  margin-right: 0px;
+  margin-left: 7px;
+}
+
+.triple-play-inner-page .row .col-md-6 .price-wrapper p .currency {
+  font-size: 30px;
+  position: relative;
+  top: -25px;
+}
+
+@media screen and (max-width: 720px) {
+  .triple-play-inner-page .row .col-md-6 .price-wrapper p .currency {
+    font-size: 20px;
+  }
+}
+
+.triple-play-inner-page .row .col-md-6 .discription p {
+  font-size: 22px;
+  line-height: 30px;
+}
+
+@media screen and (max-width: 720px) {
+  .triple-play-inner-page .row .col-md-6 .discription p {
+    font-size: 18px;
+  }
+}
+
+.triple-play-inner-page .row .col-md-6 .discription .subscribe {
+  width: 200px;
+  height: 43px;
+  background: transparent linear-gradient(270deg, #962071 0%, #702283 100%) 0%
+    0% no-repeat padding-box;
+  color: white;
+  margin-top: 1.2rem;
+  display: inline-block;
+  border-radius: 4px;
+  border: 0;
+}
+
+.triple-play-inner-page .row .col-md-6 .bundle label {
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.triple-play-inner-page .row .col-md-6 .bundle ul {
+  margin-top: 45px;
+}
+
+.triple-play-inner-page .row .col-md-6 .bundle ul li {
+  font-size: 22px;
+  margin: 20px 0;
+}
+
+@media screen and (max-width: 720px) {
+  .triple-play-inner-page .row .col-md-6 .bundle ul li {
+    font-size: 16px;
+  }
+}
+
+.triple-play-inner-page .taps .tap {
+  background: rgba(0, 0, 0, 0.03);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 2px;
+  margin: 32px 0;
+}
+
+.triple-play-inner-page .taps .tap button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  padding: 22px;
+  background: transparent;
+}
+
+.triple-play-inner-page .taps .tap button span {
+  font-size: 20px;
+  color: #962071;
+  margin: 0 18px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 720px) {
+  .triple-play-inner-page .taps .tap button span {
+    font-size: 18px;
+  }
+}
+
+.triple-play-inner-page .taps .tap .collapse {
+  display: none;
+}
+
+.triple-play-inner-page .taps .tap .collapse.show {
+  display: block;
+  padding: 22px 0;
+}
+
+.triple-play-inner-page .taps .tap .collapse .card .row.channel {
+  padding: 0 30px;
+}
+
+.triple-play-inner-page
+  .taps
+  .tap
+  .collapse
+  .card
+  .row.channel:not(:first-child) {
+  margin-top: 35px;
+}
+
+.triple-play-inner-page .taps .tap .collapse .card .row.channel:last-child {
+  margin-bottom: 16px;
+}
+
+.triple-play-inner-page .taps .tap .collapse .card .row.bordered {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.triple-play-inner-page .taps .tap .collapse .card .row .col-2 {
+  flex-basis: 15%;
+  padding-top: 48px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 960px) {
+  .triple-play-inner-page .taps .tap .collapse .card .row .col-2 {
+    flex-basis: 100%;
+    padding-top: 0;
+    margin-bottom: 20px;
+  }
+}
+
+.triple-play-inner-page .taps .tap .collapse .card .row .col-8 {
+  flex-basis: 82%;
+}
+
+@media screen and (max-width: 960px) {
+  .triple-play-inner-page .taps .tap .collapse .card .row .col-8 {
+    flex-basis: 100%;
+  }
+}
+
+.triple-play-inner-page .taps .tap .collapse .card .row .col-8 .col-3 {
+  max-width: 220px;
+  max-height: 110px;
+  margin-right: 26px;
+  margin-bottom: 35px;
+}
+
+html[lang="ar"]
+  .triple-play-inner-page
+  .taps
+  .tap
+  .collapse
+  .card
+  .row
+  .col-8
+  .col-3,
+html.l-rtl
+  .triple-play-inner-page
+  .taps
+  .tap
+  .collapse
+  .card
+  .row
+  .col-8
+  .col-3 {
+  margin-right: 0px;
+  margin-left: 26px;
+}
+
+.triple-play-inner-page .taps .tap .collapse .card .row .col-8 .col-3 img {
+  width: 100%;
+  height: 100%;
+}
+
+.triple-play-inner-page .taps .tap .collapse .card ul {
+  margin: 0;
+  padding: 0 70px;
+}
+
+@media screen and (max-width: 720) {
+  .triple-play-inner-page .taps .tap .collapse .card ul {
+    padding: 0px;
+  }
+}
+
+.triple-play-inner-page .taps .tap .collapse .card ul li {
+  font-size: 22px;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 720) {
+  .triple-play-inner-page .taps .tap .collapse .card ul li {
+    font-size: 18px;
+  }
+}
+
+html[lang="ar"] .triple-play-inner-page h3,
+html.l-rtl .triple-play-inner-page h3 {
+  line-height: 45px;
+}
+
+html[lang="ar"] .triple-play-inner-page h5,
+html[lang="ar"] .triple-play-inner-page p,
+html.l-rtl .triple-play-inner-page h5,
+html.l-rtl .triple-play-inner-page p {
+  line-height: 20px;
+}
+
+html[lang="ar"] .triple-play-inner-page li,
+html.l-rtl .triple-play-inner-page li {
+  line-height: 27px;
+}
